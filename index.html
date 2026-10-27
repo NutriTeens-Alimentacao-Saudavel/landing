@@ -1,0 +1,427 @@
+<!doctype html>
+<html lang="pt-BR">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>NutriTeens — alimentação saudável para adolescentes</title>
+  <meta name="description"
+    content="NutriTeens é um aplicativo educativo que ajuda adolescentes de 10 a 15 anos a construir hábitos alimentares mais saudáveis, com base no Guia Alimentar para a População Brasileira.">
+  <meta name="theme-color" content="#F1F8E8">
+  <meta property="og:title" content="NutriTeens">
+  <meta property="og:description" content="Hábitos saudáveis, no ritmo dos adolescentes.">
+  <meta property="og:image" content="assets/broxis-apresentando.webp">
+  <link rel="icon" href="assets/favicon.png">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+  <svg width="0" height="0" style="position:absolute" aria-hidden="true">
+    <defs>
+      <symbol id="drop" viewBox="0 0 24 24">
+        <path
+          d="M12 22a7 7 0 0 0 7-7c0-2-1-3.9-3-5.5s-3.5-4-4-6.5c-.5 2.5-2 4.9-4 6.5C6 11.1 5 13 5 15a7 7 0 0 0 7 7z" />
+      </symbol>
+      <symbol id="flame" viewBox="0 0 24 24">
+        <path
+          d="M8.5 14.5A2.5 2.5 0 0 0 11 12c0-1.38-.5-2-1-3-1.07-2.14-.22-4.05 2-6 .5 2.5 2 4.9 4 6.5 2 1.6 3 3.5 3 5.5a7 7 0 1 1-14 0c0-1.15.43-2.29 1-3a2.5 2.5 0 0 0 2.5 2.5z" />
+      </symbol>
+      <symbol id="gift" viewBox="0 0 24 24">
+        <rect x="3" y="8" width="18" height="4" rx="1" />
+        <path
+          d="M12 8v13M19 12v7a2 2 0 0 1-2 2H7a2 2 0 0 1-2-2v-7M7.5 8a2.5 2.5 0 0 1 0-5C11 3 12 8 12 8s1-5 4.5-5a2.5 2.5 0 0 1 0 5" />
+      </symbol>
+      <symbol id="food" viewBox="0 0 24 24">
+        <path d="M3 2v7a2 2 0 0 0 2 2h4a2 2 0 0 0 2-2V2M7 2v20M21 15V2a5 5 0 0 0-5 5v6a2 2 0 0 0 2 2h3zm0 0v7" />
+      </symbol>
+      <symbol id="act" viewBox="0 0 24 24">
+        <path d="M22 12h-4l-3 9L9 3l-3 9H2" />
+      </symbol>
+      <symbol id="cap" viewBox="0 0 24 24">
+        <path
+          d="M21.4 10.9a1 1 0 0 0 0-1.84L12.8 5.2a2 2 0 0 0-1.6 0L2.6 9.1a1 1 0 0 0 0 1.83l8.6 3.9a2 2 0 0 0 1.6 0zM22 10v6M6 12.5V16a6 3 0 0 0 12 0v-3.5" />
+      </symbol>
+      <symbol id="star" viewBox="0 0 24 24">
+        <path d="m12 2 3.1 6.3 6.9 1-5 4.9 1.2 6.9L12 17.8 5.8 21l1.2-6.9-5-4.9 6.9-1z" />
+      </symbol>
+      <symbol id="bell" viewBox="0 0 24 24">
+        <path d="M6 8a6 6 0 0 1 12 0c0 7 3 9 3 9H3s3-2 3-9M10.3 21a1.94 1.94 0 0 0 3.4 0" />
+      </symbol>
+      <symbol id="target" viewBox="0 0 24 24">
+        <circle cx="12" cy="12" r="10" />
+        <circle cx="12" cy="12" r="6" />
+        <circle cx="12" cy="12" r="2" />
+      </symbol>
+      <symbol id="book" viewBox="0 0 24 24">
+        <path d="M2 3h6a4 4 0 0 1 4 4v14a3 3 0 0 0-3-3H2zM22 3h-6a4 4 0 0 0-4 4v14a3 3 0 0 1 3-3h7z" />
+      </symbol>
+      <symbol id="user" viewBox="0 0 24 24">
+        <path d="M19 21v-2a4 4 0 0 0-4-4H9a4 4 0 0 0-4 4v2" />
+        <circle cx="12" cy="7" r="4" />
+      </symbol>
+      <symbol id="spk" viewBox="0 0 24 24">
+        <path d="M12 0c1 7 5 11 12 12-7 1-11 5-12 12-1-7-5-11-12-12 7-1 11-5 12-12z" />
+      </symbol>
+    </defs>
+  </svg>
+  <a class="skip" href="#conteudo">Ir para o conteúdo</a>
+  <header>
+    <div class="pillnav">
+      <a href="#topo" aria-label="NutriTeens, início"><img src="assets/logo.webp" alt="NutriTeens" width="106"
+          height="30"></a>
+      <nav aria-label="Principal"><a href="#app">O app</a><a href="#recursos">Recursos</a><a href="#equipe">Equipe</a><a
+          class="btn" href="#destaques">Conheça o app</a></nav>
+    </div>
+  </header>
+
+  <main id="conteudo">
+    <section class="hero" id="topo">
+      <div class="wrap">
+        <h1>Comer bem pode ser <mark>a sua próxima missão.</mark></h1>
+        <p class="sub">Registre água, refeições e movimento, aprenda jogando e acompanhe sua evolução com o Broxis, sem
+          julgamentos.</p>
+        <div class="cta">
+          <a class="btn btn-d" href="#destaques">Conheça o aplicativo</a>
+          <a class="btn btn-w"
+            href="https://www.figma.com/design/Ckl9eni0Mxqnb0QPM0pmhx/IIRE_2026?node-id=0-1&t=lJZu1jk4vyoPmUJK-1"
+            target="_blank" rel="noopener">Ver protótipo <span aria-hidden="true">↗</span></a>
+        </div>
+        <p class="note">Em desenvolvimento · ainda não disponível nas lojas</p>
+      </div>
+      <div class="crew" aria-hidden="true">
+        <svg class="sp" style="--c:var(--or);left:8%;top:-10px" viewBox="0 0 24 24" aria-hidden="true">
+          <use href="#spk" />
+        </svg><svg class="sp" style="--c:var(--g);right:10%;top:10px;animation-delay:.8s" viewBox="0 0 24 24"
+          aria-hidden="true">
+          <use href="#spk" />
+        </svg><svg class="sp" style="--c:var(--amb);left:30%;top:-40px;animation-delay:1.4s" viewBox="0 0 24 24"
+          aria-hidden="true">
+          <use href="#spk" />
+        </svg>
+        <img class="rx" src="assets/rx-supercontente.webp" alt="" width="170" height="165">
+        <img class="rx" src="assets/rx-curioso.webp" alt="" width="170" height="165" style="--d:.6s">
+        <img src="assets/broxis-apresentando.webp" alt="" width="200" height="332">
+        <img class="rx" src="assets/rx-orgulhoso.webp" alt="" width="170" height="165" style="--d:1.1s">
+        <img class="rx hide-s" src="assets/rx-surpreso.webp" alt="" width="170" height="165" style="--d:1.7s">
+      </div>
+    </section>
+    <div class="tick" aria-hidden="true">
+      <div><svg class="i" aria-hidden="true">
+          <use href="#drop" />
+        </svg> Água<i></i><svg class="i" aria-hidden="true">
+          <use href="#food" />
+        </svg> Refeições<i></i><svg class="i" aria-hidden="true">
+          <use href="#act" />
+        </svg> Movimento<i></i><svg class="i" aria-hidden="true">
+          <use href="#cap" />
+        </svg> Trilhas<i></i><svg class="i" aria-hidden="true">
+          <use href="#star" />
+        </svg> Cartas<i></i><svg class="i" aria-hidden="true">
+          <use href="#flame" />
+        </svg> Sequência<i></i><svg class="i" aria-hidden="true">
+          <use href="#drop" />
+        </svg> Água<i></i><svg class="i" aria-hidden="true">
+          <use href="#food" />
+        </svg> Refeições<i></i><svg class="i" aria-hidden="true">
+          <use href="#act" />
+        </svg> Movimento<i></i><svg class="i" aria-hidden="true">
+          <use href="#cap" />
+        </svg> Trilhas<i></i><svg class="i" aria-hidden="true">
+          <use href="#star" />
+        </svg> Cartas<i></i><svg class="i" aria-hidden="true">
+          <use href="#flame" />
+        </svg> Sequência<i></i></div>
+    </div>
+
+    <section class="app" id="app">
+      <div class="wrap">
+        <div class="rv">
+          <div class="phone" role="img"
+            aria-label="Ilustração da tela inicial do NutriTeens com saudação, sequência de dias, registro de água e missão do dia">
+            <div class="screen">
+              <div class="notch"></div>
+              <div class="hi">Olá, Ana.</div>
+              <div class="q">Como está o seu dia?</div>
+              <div class="pills"><span class="pill"><svg class="i" aria-hidden="true">
+                    <use href="#gift" />
+                  </svg> 120 XP</span><span class="pill f"><svg class="i" aria-hidden="true">
+                    <use href="#flame" />
+                  </svg> 5</span></div>
+              <div class="week"><span class="ok">D</span><span class="ok">S</span><span class="ok">T</span><span
+                  class="ok">Q</span><span class="ok">Q</span><span>S</span><span>S</span></div>
+              <div class="water"><b>Seu registro de consumo de água</b>
+                <div class="track"><svg class="i" aria-hidden="true">
+                    <use href="#drop" />
+                  </svg><i></i>1.200ml</div>
+              </div>
+              <div class="mis">
+                <div class="ban">Missão do mês</div><img src="assets/broxis-aceno.webp" alt="" width="64" height="100">
+                <div class="card"><small>MISSÃO DE HOJE</small>Falta pouco para cumprir<div class="bar2"><i></i></div>
+                </div>
+              </div>
+              <div class="tabs"><span></span><span></span><b class="fab">+</b><span></span><span></span></div>
+            </div>
+          </div>
+          <p class="cap">Tela ilustrativa, recriada a partir do app</p>
+        </div>
+        <div class="rv">
+          <h2>Um parceiro para quem tem <mark>10 a 15 anos.</mark></h2>
+          <p class="lead">O NutriTeens traz o Guia Alimentar para a População Brasileira para a rotina dos adolescentes,
+            com linguagem jovem, jogos e o mascote Broxis ao lado.</p>
+          <ul class="stk">
+            <li class="sx"><b>Educativo, não prescritivo.</b> Não faz diagnóstico nem dieta e não substitui
+              profissionais de saúde.</li>
+            <li class="sx"><b>Sem julgamento.</b> Sem contagem calórica rígida, sem rankings e sem comparação entre
+              usuários.</li>
+            <li class="sx"><b>Feito com quem importa.</b> Criado com adolescentes, professores e nutricionista em design
+              participativo.</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <section class="why" id="porque">
+      <div class="wrap">
+        <div class="rv">
+          <div class="big"><mark>33,43%</mark></div>
+          <p class="src">dos adolescentes acompanhados pela Atenção Primária à Saúde em 2025 estavam com sobrepeso ou
+            obesidade, segundo o SISVAN (dado do documento de visão do projeto).</p>
+        </div>
+        <div class="rv">
+          <h2>Por que o NutriTeens existe</h2>
+          <p>A adolescência é uma fase decisiva para os hábitos que acompanham a vida adulta. O Guia Alimentar para a
+            População Brasileira é a principal referência, mas seu formato e sua linguagem pouco atraem quem tem entre
+            10 e 15 anos.</p>
+          <p>Muitos aplicativos de saúde apostam em contar calorias e criar rankings, o que pode prejudicar a relação do
+            adolescente com a comida e com o próprio corpo. O NutriTeens segue o caminho oposto: aprender brincando, sem
+            comparação.</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="feat" id="destaques">
+      <div class="wrap">
+        <h2 class="rv">Pequenas ações todo dia. <mark class="b">Hábitos que ficam.</mark></h2>
+        <div class="blks">
+          <article class="blk rv">
+            <h3>Registre sem complicação</h3>
+            <p>Água, refeições e atividade física em poucos toques, com retorno acolhedor e sem cobrança.</p>
+            <div class="vis">
+              <div style="width:100%">
+                <div class="water"><b>Seu registro de consumo de água</b>
+                  <div class="track"><svg class="i" aria-hidden="true">
+                      <use href="#drop" />
+                    </svg><i></i>1.200ml</div>
+                </div>
+                <ul class="chips">
+                  <li><svg class="i" aria-hidden="true">
+                      <use href="#drop" />
+                    </svg> Água</li>
+                  <li><svg class="i" aria-hidden="true">
+                      <use href="#food" />
+                    </svg> Refeições</li>
+                  <li><svg class="i" aria-hidden="true">
+                      <use href="#act" />
+                    </svg> Atividade</li>
+                </ul>
+              </div>
+            </div>
+          </article>
+          <article class="blk rv">
+            <h3>Aprenda jogando</h3>
+            <p>Trilhas com lições interativas: verdadeiro ou falso, associar, ordenar e mais.</p>
+            <div class="vis"><img src="assets/aprenda.webp"
+                alt="Broxis em uma trilha de aprendizagem com estrelas e medalhas" width="420" height="518"
+                loading="lazy" style="max-height:250px;width:auto"></div>
+          </article>
+          <article class="blk rv">
+            <h3>Missões e cartas</h3>
+            <p>Missões diárias, sequência de dias e o Álbum do Guia com os 10 passos da alimentação saudável.</p>
+            <div class="vis">
+              <div class="cards"><img src="assets/carta-01.webp" alt="Carta 01: Comida de verdade" width="360"
+                  height="530" loading="lazy"><img src="assets/carta-05.webp" alt="Carta 05: Com calma e companhia"
+                  width="360" height="530" loading="lazy"><img src="assets/carta-07.webp" alt="Carta 07: Mão na massa"
+                  width="360" height="530" loading="lazy"></div>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="rec" id="recursos">
+      <div class="wrap">
+        <h2 class="rv">Tudo o que já funciona no app <mark>hoje.</mark></h2>
+        <div class="grid">
+          <div class="it sx">
+            <div class="ic"><svg class="i" aria-hidden="true">
+                <use href="#user" />
+              </svg></div>
+            <h3>Cadastro e triagem</h3>
+            <p>Login com e-mail ou Google e perguntas iniciais para conhecer o contexto de cada adolescente.</p>
+          </div>
+          <div class="it sx">
+            <div class="ic"><svg class="i" aria-hidden="true">
+                <use href="#drop" />
+              </svg></div>
+            <h3>Meta de água</h3>
+            <p>A meta diária é calculada a partir do peso, com garrafa animada para acompanhar o progresso.</p>
+          </div>
+          <div class="it sx">
+            <div class="ic"><svg class="i" aria-hidden="true">
+                <use href="#food" />
+              </svg></div>
+            <h3>Refeições com retorno</h3>
+            <p>Registro qualitativo, pratos com vários ingredientes e feedback gentil sobre processamento e diversidade.
+            </p>
+          </div>
+          <div class="it sx">
+            <div class="ic"><svg class="i" aria-hidden="true">
+                <use href="#book" />
+              </svg></div>
+            <h3>Receitas passo a passo</h3>
+            <p>Receitas simples com guia visual, etapa por etapa.</p>
+          </div>
+          <div class="it sx">
+            <div class="ic"><svg class="i" aria-hidden="true">
+                <use href="#cap" />
+              </svg></div>
+            <h3>Trilhas de aprendizagem</h3>
+            <p>Lições curtas com exercícios interativos baseados no Guia Alimentar.</p>
+          </div>
+          <div class="it sx">
+            <div class="ic"><svg class="i" aria-hidden="true">
+                <use href="#target" />
+              </svg></div>
+            <h3>Missões e XP</h3>
+            <p>Um desafio por dia e missões do mês, com pontos por ações feitas pelo próprio usuário.</p>
+          </div>
+          <div class="it sx">
+            <div class="ic"><svg class="i" aria-hidden="true">
+                <use href="#flame" />
+              </svg></div>
+            <h3>Sequência e conquistas</h3>
+            <p>Dias seguidos, insígnias e o Álbum do Guia com cartas ilustradas.</p>
+          </div>
+          <div class="it sx">
+            <div class="ic"><svg class="i" aria-hidden="true">
+                <use href="#bell" />
+              </svg></div>
+            <h3>Lembretes</h3>
+            <p>Avisos para a hora de comer e de beber água, direto no celular.</p>
+          </div>
+        </div>
+        <div class="soon rv"><b>Em construção:</b>
+          <ul class="chips">
+            <li>Espaço social moderado</li>
+            <li>Scanner de alimentos</li>
+            <li>Assistente de dúvidas</li>
+            <li>Receitas pelos ingredientes que você tem</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <section class="how" id="projeto-pesquisa">
+      <div class="wrap">
+        <h2 class="rv">Criado <mark class="b">com adolescentes,</mark> não só para eles.</h2>
+        <p class="lead rv">O NutriTeens nasceu de sessões de Design Participativo em uma escola pública e uma privada de
+          Viçosa-MG, com adolescentes, professores e nutricionista. As funcionalidades surgem do diálogo entre o que os
+          adolescentes querem e o olhar técnico, pedagógico e nutricional dos especialistas.</p>
+        <div class="dim">
+          <div class="sx">
+            <h3>Engajamento</h3>
+            <p>Gamificação com sentido, autonomia e personalização.</p>
+          </div>
+          <div class="sx">
+            <h3>Aprendizagem</h3>
+            <p>Educação nutricional contextualizada, com feedback contínuo.</p>
+          </div>
+          <div class="sx">
+            <h3>Socialização</h3>
+            <p>Interação positiva entre pares, sem rankings nem comparação.</p>
+          </div>
+          <div class="sx">
+            <h3>Contextualização</h3>
+            <p>Linguagem jovem, contexto escolar e validação por nutricionista.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="team" id="equipe">
+      <div class="wrap">
+        <div class="rv">
+          <h2>Uma parceria entre <mark>Nutrição, Saúde</mark> e Informática.</h2>
+          <p class="t">O NutriTeens é desenvolvido na Universidade Federal de Viçosa, em colaboração entre dois
+            departamentos, como projeto de Iniciação Científica (PIBIC/CNPq).</p>
+          <div class="inst">
+            <figure><img src="assets/dns.webp" alt="Logo do Departamento de Nutrição e Saúde" width="104" height="60"
+                loading="lazy">
+              <figcaption>Departamento de Nutrição e Saúde · UFV</figcaption>
+            </figure>
+            <figure><img src="assets/dpi.webp" alt="Logo do Departamento de Informática" width="65" height="60"
+                loading="lazy">
+              <figcaption>Departamento de Informática · UFV</figcaption>
+            </figure>
+          </div>
+          <p class="small">Pesquisa aprovada pelo Comitê de Ética em Pesquisa da UFV (CAAE 94172425.4.0000.5153).
+            Agradecemos às escolas, professores, nutricionista e adolescentes que participaram das sessões.</p>
+        </div>
+        <ul class="ppl" aria-label="Equipe">
+          <li class="sx"><span class="av" aria-hidden="true">AE</span>
+            <div><b>Ana Elisa Silva Pinto</b><span>Colaboração em Nutrição · Departamento de Nutrição e Saúde</span>
+            </div>
+          </li>
+          <li class="sx"><span class="av" aria-hidden="true">IN</span>
+            <div><b>Isabela Cristina da Silva Nascimento</b><span>Colaboração em Nutrição · Departamento de Nutrição e
+                Saúde</span></div>
+          </li>
+          <li class="sx"><span class="av" aria-hidden="true">ML</span>
+            <div><b>Maria Lúcia Bento Villela</b><span>Orientadora · Departamento de Informática</span></div>
+          </li>
+          <li class="sx"><span class="av" aria-hidden="true">GP</span>
+            <div><b>Gustavo Santos Pinto</b><span>Bolsista de Iniciação Científica · desenvolvimento e pesquisa</span>
+            </div>
+          </li>
+        </ul>
+      </div>
+    </section>
+
+    <section class="end" id="projeto">
+      <div class="wrap rv">
+        <img src="assets/broxis-aceno.webp" alt="Broxis acenando" width="126" height="200" loading="lazy">
+        <h2>Bora construir hábitos <mark class="a">mais saudáveis?</mark></h2>
+        <p>O NutriTeens é um projeto de pesquisa da Universidade Federal de Viçosa, em evolução. Conheça o protótipo e
+          acompanhe o que vem por aí.</p>
+        <div class="cta"><a class="btn btn-d"
+            href="https://www.figma.com/design/Ckl9eni0Mxqnb0QPM0pmhx/IIRE_2026?node-id=0-1&t=lJZu1jk4vyoPmUJK-1"
+            target="_blank" rel="noopener">Conhecer o projeto <span aria-hidden="true">↗</span></a></div>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <div class="wrap">
+      <div><img src="assets/logo.webp" alt="NutriTeens" width="113" height="32">
+        <p>Aplicativo educativo de apoio à alimentação saudável para adolescentes, inspirado no Guia Alimentar para a
+          População Brasileira. Não substitui o acompanhamento de profissionais de saúde.</p>
+      </div>
+      <ul aria-label="Links institucionais">
+        <li><a href="#recursos">Recursos</a></li>
+        <li><a href="#equipe">Equipe</a></li>
+        <li><a href="https://www.figma.com/design/Ckl9eni0Mxqnb0QPM0pmhx/IIRE_2026?node-id=0-1&t=lJZu1jk4vyoPmUJK-1"
+            target="_blank" rel="noopener">Protótipo no Figma</a></li>
+        <li><a href="https://bvsms.saude.gov.br/bvs/publicacoes/guia_alimentar_populacao_brasileira_2ed.pdf"
+            target="_blank" rel="noopener">Guia Alimentar (Ministério da Saúde)</a></li>
+      </ul>
+      <small>© 2026 NutriTeens · Projeto de Iniciação Científica (PIBIC/CNPq), UFV · Licença MIT</small>
+    </div>
+  </footer>
+  <script>
+    const io = new IntersectionObserver(e => e.forEach(x => {if (x.isIntersecting) {x.target.classList.add('in'); io.unobserve(x.target)} }), {threshold: .15, rootMargin: '0px 0px -6% 0px'});
+    const cnt = new Map();
+    document.querySelectorAll('.rv,.sx').forEach(el => {if (el.classList.contains('sx')) {const n = cnt.get(el.parentElement) || 0; cnt.set(el.parentElement, n + 1); el.style.setProperty('--d', (n % 4) * .14 + 's')} io.observe(el)});
+  </script>
+</body>
+
+</html>
