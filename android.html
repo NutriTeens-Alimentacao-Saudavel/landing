@@ -1,0 +1,262 @@
+<!doctype html>
+<html lang="pt-BR">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Instalar no Android · NutriTeens</title>
+  <meta name="description" content="Passo a passo para instalar a versão de teste do NutriTeens no Android, pela Google Play ou pelo arquivo APK.">
+  <meta name="theme-color" content="#F1F8E8">
+  <meta property="og:title" content="Instalar no Android · NutriTeens">
+  <meta property="og:description" content="Passo a passo para instalar a versão de teste do NutriTeens no Android, pela Google Play ou pelo arquivo APK.">
+  <meta property="og:image" content="assets/broxis-apresentando.webp">
+  <link rel="icon" href="assets/favicon.png">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+  <svg width="0" height="0" style="position:absolute" aria-hidden="true">
+    <defs>
+      <symbol id="drop" viewBox="0 0 24 24">
+        <path
+          d="M12 22a7 7 0 0 0 7-7c0-2-1-3.9-3-5.5s-3.5-4-4-6.5c-.5 2.5-2 4.9-4 6.5C6 11.1 5 13 5 15a7 7 0 0 0 7 7z" />
+      </symbol>
+      <symbol id="flame" viewBox="0 0 24 24">
+        <path
+          d="M8.5 14.5A2.5 2.5 0 0 0 11 12c0-1.38-.5-2-1-3-1.07-2.14-.22-4.05 2-6 .5 2.5 2 4.9 4 6.5 2 1.6 3 3.5 3 5.5a7 7 0 1 1-14 0c0-1.15.43-2.29 1-3a2.5 2.5 0 0 0 2.5 2.5z" />
+      </symbol>
+      <symbol id="gift" viewBox="0 0 24 24">
+        <rect x="3" y="8" width="18" height="4" rx="1" />
+        <path
+          d="M12 8v13M19 12v7a2 2 0 0 1-2 2H7a2 2 0 0 1-2-2v-7M7.5 8a2.5 2.5 0 0 1 0-5C11 3 12 8 12 8s1-5 4.5-5a2.5 2.5 0 0 1 0 5" />
+      </symbol>
+      <symbol id="food" viewBox="0 0 24 24">
+        <path d="M3 2v7a2 2 0 0 0 2 2h4a2 2 0 0 0 2-2V2M7 2v20M21 15V2a5 5 0 0 0-5 5v6a2 2 0 0 0 2 2h3zm0 0v7" />
+      </symbol>
+      <symbol id="act" viewBox="0 0 24 24">
+        <path d="M22 12h-4l-3 9L9 3l-3 9H2" />
+      </symbol>
+      <symbol id="cap" viewBox="0 0 24 24">
+        <path
+          d="M21.4 10.9a1 1 0 0 0 0-1.84L12.8 5.2a2 2 0 0 0-1.6 0L2.6 9.1a1 1 0 0 0 0 1.83l8.6 3.9a2 2 0 0 0 1.6 0zM22 10v6M6 12.5V16a6 3 0 0 0 12 0v-3.5" />
+      </symbol>
+      <symbol id="star" viewBox="0 0 24 24">
+        <path d="m12 2 3.1 6.3 6.9 1-5 4.9 1.2 6.9L12 17.8 5.8 21l1.2-6.9-5-4.9 6.9-1z" />
+      </symbol>
+      <symbol id="bell" viewBox="0 0 24 24">
+        <path d="M6 8a6 6 0 0 1 12 0c0 7 3 9 3 9H3s3-2 3-9M10.3 21a1.94 1.94 0 0 0 3.4 0" />
+      </symbol>
+      <symbol id="target" viewBox="0 0 24 24">
+        <circle cx="12" cy="12" r="10" />
+        <circle cx="12" cy="12" r="6" />
+        <circle cx="12" cy="12" r="2" />
+      </symbol>
+      <symbol id="book" viewBox="0 0 24 24">
+        <path d="M2 3h6a4 4 0 0 1 4 4v14a3 3 0 0 0-3-3H2zM22 3h-6a4 4 0 0 0-4 4v14a3 3 0 0 1 3-3h7z" />
+      </symbol>
+      <symbol id="user" viewBox="0 0 24 24">
+        <path d="M19 21v-2a4 4 0 0 0-4-4H9a4 4 0 0 0-4 4v2" />
+        <circle cx="12" cy="7" r="4" />
+      </symbol>
+      <symbol id="spk" viewBox="0 0 24 24">
+        <path d="M12 0c1 7 5 11 12 12-7 1-11 5-12 12-1-7-5-11-12-12 7-1 11-5 12-12z" />
+      </symbol>
+      <symbol id="phone" viewBox="0 0 24 24"><rect x="5" y="2" width="14" height="20" rx="2" /><path d="M12 18h.01" /></symbol>
+    </defs>
+  </svg>
+  <a class="skip" href="#conteudo">Ir para o conteúdo</a>
+  <header>
+    <div class="pillnav">
+      <a href="index.html" aria-label="NutriTeens, início"><img src="assets/logo.webp" alt="NutriTeens" width="106" height="30"></a>
+      <nav aria-label="Principal"><a href="index.html">Início</a><a href="ios.html">iPhone</a><a href="android.html" aria-current="page">Android</a><a class="btn" href="ios.html">Ver passo a passo do iPhone</a></nav>
+    </div>
+  </header>
+
+  <main id="conteudo">
+    <section class="hero" id="topo">
+      <div class="wrap">
+        <h1>Instale o NutriTeens no <mark>Android.</mark></h1>
+        <p class="sub">Você pode instalar pela Google Play ou baixando o arquivo APK. Escolha o caminho que for melhor para o seu celular.</p>
+        <div class="cta">
+          <a class="btn btn-d" href="#passos">Começar o passo a passo</a>
+          <a class="btn btn-w" href="index.html">Voltar ao início</a>
+        </div>
+        <p class="note">Versão de testes · o app ainda não está nas lojas</p>
+      </div>
+      <div class="crew" aria-hidden="true">
+        <svg class="sp" style="--c:var(--or);left:8%;top:-10px" viewBox="0 0 24 24" aria-hidden="true">
+          <use href="#spk" />
+        </svg><svg class="sp" style="--c:var(--g);right:10%;top:10px;animation-delay:.8s" viewBox="0 0 24 24"
+          aria-hidden="true">
+          <use href="#spk" />
+        </svg><svg class="sp" style="--c:var(--amb);left:30%;top:-40px;animation-delay:1.4s" viewBox="0 0 24 24"
+          aria-hidden="true">
+          <use href="#spk" />
+        </svg>
+        <img class="rx" src="assets/rx-supercontente.webp" alt="" width="170" height="165">
+        <img class="rx" src="assets/rx-curioso.webp" alt="" width="170" height="165" style="--d:.6s">
+        <img src="assets/broxis-apresentando.webp" alt="" width="200" height="332">
+        <img class="rx" src="assets/rx-orgulhoso.webp" alt="" width="170" height="165" style="--d:1.1s">
+        <img class="rx hide-s" src="assets/rx-surpreso.webp" alt="" width="170" height="165" style="--d:1.7s">
+      </div>
+    </section>
+    <div class="tick" aria-hidden="true">
+      <div><svg class="i" aria-hidden="true">
+          <use href="#drop" />
+        </svg> Água<i></i><svg class="i" aria-hidden="true">
+          <use href="#food" />
+        </svg> Refeições<i></i><svg class="i" aria-hidden="true">
+          <use href="#act" />
+        </svg> Movimento<i></i><svg class="i" aria-hidden="true">
+          <use href="#cap" />
+        </svg> Trilhas<i></i><svg class="i" aria-hidden="true">
+          <use href="#star" />
+        </svg> Cartas<i></i><svg class="i" aria-hidden="true">
+          <use href="#flame" />
+        </svg> Sequência<i></i><svg class="i" aria-hidden="true">
+          <use href="#drop" />
+        </svg> Água<i></i><svg class="i" aria-hidden="true">
+          <use href="#food" />
+        </svg> Refeições<i></i><svg class="i" aria-hidden="true">
+          <use href="#act" />
+        </svg> Movimento<i></i><svg class="i" aria-hidden="true">
+          <use href="#cap" />
+        </svg> Trilhas<i></i><svg class="i" aria-hidden="true">
+          <use href="#star" />
+        </svg> Cartas<i></i><svg class="i" aria-hidden="true">
+          <use href="#flame" />
+        </svg> Sequência<i></i></div>
+    </div>
+    <section class="get" id="caminho">
+      <div class="wrap">
+        <h2 class="rv">Dois jeitos de instalar. <mark class="b">Escolha um.</mark></h2>
+        <p class="lead rv">Os dois levam ao mesmo app. Se você não tem preferência, vá pela Google Play: é o caminho mais simples e seguro.</p>
+        <div class="pick">
+          <a class="opt rv" href="#play"><svg class="i" aria-hidden="true"><use href="#phone" /></svg>
+            <span class="tag">Recomendado</span>
+            <h3>Google Play</h3>
+            <p>Você entra no teste com a sua conta Google e instala pela loja, com atualizações automáticas.</p>
+            <span class="go">Ir para este caminho</span></a>
+          <a class="opt rv" href="#apk"><svg class="i" aria-hidden="true"><use href="#phone" /></svg>
+            <h3>Arquivo APK</h3>
+            <p>Você baixa o arquivo direto do GitHub e instala sem passar pela loja.</p>
+            <span class="go">Ir para este caminho</span></a>
+        </div>
+      </div>
+    </section>
+    <section class="steps" id="play">
+      <div class="wrap">
+        <h2 class="rv">Pela Google Play, <mark>em 5 passos.</mark></h2>
+        <p class="lead rv">Faça tudo direto no Android em que o app vai ficar.</p>
+      <ol class="stp">
+        <li class="sx"><span class="n" aria-hidden="true">1</span>
+          <div>
+            <h3>Entre com a conta Google certa</h3>
+            <p>No celular, use a conta Google (Gmail) que a equipe cadastrou como testadora. Se ainda não enviou o seu e-mail, mande antes de seguir.</p>
+          </div></li>
+        <li class="sx"><span class="n" aria-hidden="true">2</span>
+          <div>
+            <h3>Abra o link do teste</h3>
+            <p>Com essa conta ativa no celular, toque no link do teste. Se aparecer erro de página não encontrada, a conta usada não está na lista.</p>
+            <a class="btn btn-d" href="https://play.google.com/apps/testing/SEU.PACOTE" target="_blank" rel="noopener">Abrir o link do teste <span aria-hidden="true">↗</span></a>
+          </div></li>
+        <li class="sx"><span class="n" aria-hidden="true">3</span>
+          <div>
+            <h3>Participe do teste</h3>
+            <p>Na página que abrir, toque no botão para se tornar testador. A partir daí, o NutriTeens fica liberado para a sua conta.</p>
+          </div></li>
+        <li class="sx"><span class="n" aria-hidden="true">4</span>
+          <div>
+            <h3>Instale pela Google Play</h3>
+            <p>A página mostra um link para baixar na Google Play. Toque nele e depois em <b>Instalar</b>. Às vezes o app leva alguns minutos para aparecer na loja.</p>
+          </div></li>
+        <li class="sx"><span class="n" aria-hidden="true">5</span>
+          <div>
+            <h3>Abra o app e comece</h3>
+            <p>Toque em <b>Abrir</b> ou use o ícone do NutriTeens. As atualizações chegam pela própria Google Play.</p>
+          </div></li>
+      </ol><div class="tip rv"><h3>Ajude o projeto</h3><ul><li>Fique no teste por pelo menos 14 dias e abra o app de vez em quando. Isso ajuda o NutriTeens a chegar à Google Play para todo mundo.</li></ul></div>
+      </div>
+    </section>
+    <section class="how" id="apk">
+      <div class="wrap nar">
+        <h2 class="rv">Pelo APK, <mark class="b">em 5 passos.</mark></h2>
+        <p class="lead rv">Para quem prefere baixar o arquivo, ou não consegue entrar no teste da Google Play.</p>
+        <ol class="stp">
+        <li class="sx"><span class="n" aria-hidden="true">1</span>
+          <div>
+            <h3>Abra a página de downloads</h3>
+            <p>No celular, abra a página oficial de versões do NutriTeens no GitHub. Baixe apenas por este link, nunca por arquivos recebidos de outras pessoas.</p>
+            <a class="btn btn-d" href="https://github.com/SEU-USUARIO/SEU-REPOSITORIO/releases/latest" target="_blank" rel="noopener">Abrir a página de downloads <span aria-hidden="true">↗</span></a>
+          </div></li>
+        <li class="sx"><span class="n" aria-hidden="true">2</span>
+          <div>
+            <h3>Baixe o arquivo APK</h3>
+            <p>Role até <b>Assets</b> e toque no arquivo que termina em <code>.apk</code>. Se o navegador avisar que o arquivo pode ser nocivo, toque em <b>Baixar mesmo assim</b>.</p>
+          </div></li>
+        <li class="sx"><span class="n" aria-hidden="true">3</span>
+          <div>
+            <h3>Permita a instalação</h3>
+            <p>Ao abrir o arquivo, o Android pergunta se pode instalar apps vindos do navegador. Toque em <b>Configurações</b>, ative <b>Permitir desta fonte</b> e volte.</p>
+          </div></li>
+        <li class="sx"><span class="n" aria-hidden="true">4</span>
+          <div>
+            <h3>Toque em Instalar</h3>
+            <p>Se o Google Play Protect mostrar um aviso, toque em <b>Mais detalhes</b> e depois em <b>Instalar mesmo assim</b>. Conclua e abra o app.</p>
+          </div></li>
+        <li class="sx"><span class="n" aria-hidden="true">5</span>
+          <div>
+            <h3>Desative a permissão</h3>
+            <p>Por segurança, volte às configurações do Android e desative a permissão que você deu ao navegador. O NutriTeens continua instalado.</p>
+          </div></li>
+      </ol><div class="tip rv"><h3>Antes de baixar o APK</h3><ul><li>Dependendo do celular, o Android pode pedir etapas extras ou bloquear a instalação de apps de fora da loja. Se isso acontecer, use o caminho pela Google Play.</li><li>Para atualizar, baixe a versão mais nova na mesma página e instale por cima. Normalmente os seus dados são mantidos.</li></ul></div>
+      </div>
+    </section>
+    <section class="steps">
+      <div class="wrap">
+        <h2 class="rv">Deu algum problema?</h2>
+      <div class="faq">
+        <details><summary>Não aparece o botão Instalar</summary><p>Confira se a conta Google do celular é a mesma cadastrada como testadora. Depois de entrar no teste, a liberação pode levar algumas horas.</p></details>
+        <details><summary>A página do teste diz que não foi encontrada</summary><p>A conta usada não está na lista de testadores. Envie o seu e-mail Google para a equipe.</p></details>
+        <details><summary>O APK não instala</summary><p>O Android pode ter bloqueado apps de fora da loja neste celular. Use o caminho pela Google Play.</p></details>
+      </div>
+      </div>
+    </section>
+    <section class="end">
+      <div class="wrap rv">
+        <img src="assets/broxis-aceno.webp" alt="Broxis acenando" width="126" height="200" loading="lazy">
+        <h2>Seu celular é <mark class="a">iPhone?</mark></h2>
+        <p>Tem passo a passo para você também, usando o TestFlight.</p>
+        <div class="cta"><a class="btn btn-d" href="ios.html">Ver passo a passo do iPhone</a></div>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <div class="wrap">
+      <div><img src="assets/logo.webp" alt="NutriTeens" width="113" height="32">
+        <p>Aplicativo educativo de apoio à alimentação saudável para adolescentes, inspirado no Guia Alimentar para a
+          População Brasileira. Não substitui o acompanhamento de profissionais de saúde.</p>
+      </div>
+      <ul aria-label="Links institucionais">
+        <li><a href="ios.html">Instalar no iPhone</a></li>
+        <li><a href="android.html">Instalar no Android</a></li>
+        <li><a href="index.html#recursos">Recursos</a></li>
+        <li><a href="index.html#duvidas">Dúvidas frequentes</a></li>
+        <li><a href="index.html#equipe">Equipe</a></li>
+        <li><a href="https://www.figma.com/design/Ckl9eni0Mxqnb0QPM0pmhx/IIRE_2026?node-id=0-1&t=lJZu1jk4vyoPmUJK-1"
+            target="_blank" rel="noopener">Protótipo no Figma</a></li>
+        <li><a href="https://bvsms.saude.gov.br/bvs/publicacoes/guia_alimentar_populacao_brasileira_2ed.pdf"
+            target="_blank" rel="noopener">Guia Alimentar (Ministério da Saúde)</a></li>
+      </ul>
+      <small>© 2026 NutriTeens · Projeto de Iniciação Científica (PIBIC/CNPq), UFV · Licença MIT</small>
+    </div>
+  </footer>
+  <script>
+    const io = new IntersectionObserver(e => e.forEach(x => { if (x.isIntersecting) { x.target.classList.add('in'); io.unobserve(x.target) } }), { threshold: .15, rootMargin: '0px 0px -6% 0px' });
+    const cnt = new Map();
+    document.querySelectorAll('.rv,.sx').forEach(el => { if (el.classList.contains('sx')) { const n = cnt.get(el.parentElement) || 0; cnt.set(el.parentElement, n + 1); el.style.setProperty('--d', (n % 4) * .14 + 's') } io.observe(el) });
+  </script>
+</body>
+
+</html>
