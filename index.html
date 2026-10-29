@@ -14,6 +14,7 @@
   <link rel="icon" href="assets/favicon.png">
   <link rel="stylesheet" href="css/style.css">
  
+<noscript><style>.rv,.sx{opacity:1!important;translate:none!important;transform:none!important}</style></noscript>
 </head>
 
 <body>
@@ -76,16 +77,16 @@
     </div>
   </header>
 
-  <main id="conteudo">
+  <main id="conteudo" tabindex="-1">
     <section class="hero" id="topo">
       <div class="wrap">
-        <h1>Comer bem pode ser <mark>a sua próxima missão.</mark></h1>
+        <h1>Comer bem pode ser <span class="mk">a sua próxima missão.</span></h1>
         <p class="sub">Descubra curiosidades sobre alimentação, complete desafios, conquiste cartas e explore novos hábitos com o Broxis. Tudo no seu ritmo, sem cobranças ou comparações.</p>
         <div class="cta">
           <a class="btn btn-d" href="#destaques">Conheça o aplicativo</a>
           <a class="btn btn-w"
             href="https://www.figma.com/design/Ckl9eni0Mxqnb0QPM0pmhx/IIRE_2026?node-id=0-1&t=lJZu1jk4vyoPmUJK-1"
-            target="_blank" rel="noopener">Ver protótipo <span aria-hidden="true">↗</span></a>
+            target="_blank" rel="noopener">Ver protótipo <span aria-hidden="true">↗</span><span class="sr"> (abre em nova aba)</span></a>
         </div>
         <p class="note">Em desenvolvimento · ainda não está nas lojas. <a href="#instalar">Instale a versão de testes</a></p>
       </div>
@@ -166,9 +167,9 @@
           <p class="cap">Tela ilustrativa, recriada a partir do app</p>
         </div>
         <div class="rv">
-          <h2>Um parceiro para quem tem <mark>10 a 15 anos.</mark></h2>
+          <h2>Um parceiro para quem tem <span class="mk">10 a 15 anos.</span></h2>
           <p class="lead">O NutriTeens transforma orientações do Guia Alimentar para a População Brasileira em uma experiência interativa para o dia a dia. Com desafios, descobertas e o Broxis como companheiro de jornada, aprender sobre alimentação saudável fica mais próximo da realidade de quem tem entre 10 e 15 anos.</p>
-          <ul class="stk">
+          <ul class="stk" role="list">
             <li class="sx"><b>Educativo, não prescritivo.</b> Um espaço para aprender sobre alimentação e bem-estar, sem diagnósticos ou dietas e sem substituir profissionais de saúde.</li>
             <li class="sx"><b>A jornada é única.</b> A proposta é explorar novos hábitos sem cobranças por desempenho.</li>
             <li class="sx"><b>Criado com adolescentes.</b> As ideias e necessidades dos jovens, junto às contribuições de professores e nutricionista, orientam a construção do aplicativo.</li>
@@ -180,7 +181,7 @@
     <section class="why" id="porque">
       <div class="wrap">
         <div class="rv">
-          <div class="big"><mark>33,43%</mark></div>
+          <div class="big"><span class="mk">33,43%</span></div>
           <p class="src">dos adolescentes acompanhados pela Atenção Primária à Saúde em 2025 estavam com sobrepeso ou
             obesidade, segundo o SISVAN (dado do documento de visão do projeto).</p>
         </div>
@@ -194,7 +195,7 @@
 
     <section class="feat" id="destaques">
       <div class="wrap">
-        <h2 class="rv">Pequenas ações todo dia. <mark class="b">Hábitos que ficam.</mark></h2>
+        <h2 class="rv">Pequenas ações todo dia. <span class="mk b">Hábitos que ficam.</span></h2>
         <div class="blks">
           <article class="blk rv">
             <h3>Acompanhe seu dia</h3>
@@ -206,7 +207,7 @@
                       <use href="#drop" />
                     </svg><i></i>1.200ml</div>
                 </div>
-                <ul class="chips">
+                <ul class="chips" role="list">
                   <li><svg class="i" aria-hidden="true">
                       <use href="#drop" />
                     </svg> Água</li>
@@ -241,9 +242,28 @@
       </div>
     </section>
 
+    <section class="how try" id="experimente">
+      <div class="wrap">
+        <div class="rv">
+          <h2>Experimente uma <span class="mk b">missão.</span></h2>
+          <p class="lead">Responda 3 perguntas rápidas, como nas trilhas do app, e abra suas primeiras cartas do Álbum do Guia.</p>
+          <div class="slots" role="group" aria-label="Cartas do Álbum do Guia">
+            <div class="slot"><span aria-hidden="true">?</span><span class="sr">Carta bloqueada</span></div>
+            <div class="slot"><span aria-hidden="true">?</span><span class="sr">Carta bloqueada</span></div>
+            <div class="slot"><span aria-hidden="true">?</span><span class="sr">Carta bloqueada</span></div>
+          </div>
+        </div>
+        <div class="game rv" id="game">
+          <div class="g-top"><span class="pill"><svg class="i" aria-hidden="true"><use href="#gift" /></svg> <b id="xp">0</b> XP</span><span id="step">Pergunta 1 de 3</span></div>
+          <div id="gmain"><noscript><p>Ative o JavaScript para jogar esta missão.</p></noscript></div>
+          <p class="cap">Mini-jogo ilustrativo, com perguntas inspiradas no Guia Alimentar.</p>
+        </div>
+      </div>
+    </section>
+
     <section class="get" id="instalar">
       <div class="wrap">
-        <h2 class="rv">Escolha o seu celular e <mark>instale em minutos.</mark></h2>
+        <h2 class="rv">Escolha o seu celular e <span class="mk">instale em minutos.</span></h2>
         <p class="lead rv">O NutriTeens está em fase de testes e ainda não está nas lojas. Siga o passo a passo do seu aparelho para instalar a versão de teste.</p>
         <div class="pick">
           <a class="opt rv" href="ios.html"><svg class="i" aria-hidden="true"><use href="#phone" /></svg>
@@ -261,7 +281,7 @@
 
     <section class="rec" id="recursos">
       <div class="wrap">
-        <h2 class="rv">Recursos do <mark>aplicativo.</mark></h2>
+        <h2 class="rv">Recursos do <span class="mk">aplicativo.</span></h2>
         <div class="grid">
           <div class="it sx">
             <div class="ic"><svg class="i" aria-hidden="true">
@@ -321,7 +341,7 @@
           </div>
         </div>
         <div class="soon rv"><b>Em construção:</b>
-          <ul class="chips">
+          <ul class="chips" role="list">
             <li>Espaço social moderado</li>
             <li>Scanner de alimentos</li>
             <li>Assistente de dúvidas</li>
@@ -333,7 +353,7 @@
 
     <section class="steps" id="duvidas">
       <div class="wrap">
-        <h2 class="rv">Dúvidas <mark>frequentes.</mark></h2>
+        <h2 class="rv">Dúvidas <span class="mk">frequentes.</span></h2>
         <div class="faq">
           <details><summary>O NutriTeens é gratuito?</summary><p>Sim. O NutriTeens é um projeto de pesquisa da Universidade Federal de Viçosa e a versão de testes é gratuita.</p></details>
           <details><summary>Para quem é o aplicativo?</summary><p>Para adolescentes de 10 a 15 anos. Famílias e professores também podem conhecer o app e conversar com os jovens sobre o que eles descobrem nele.</p></details>
@@ -347,7 +367,7 @@
 
     <section class="how" id="projeto-pesquisa">
       <div class="wrap">
-        <h2 class="rv">Criado <mark class="b">com adolescentes,</mark> não só para eles.</h2>
+        <h2 class="rv">Criado <span class="mk b">com adolescentes,</span> não só para eles.</h2>
         <p class="lead rv">O NutriTeens está sendo construído a partir de ideias, experiências e necessidades compartilhadas por adolescentes de escolas pública e privada de Viçosa-MG. Nas sessões de Design Participativo, adolescentes contribuíram com propostas e alternativas de design, enquanto professores e nutricionista trouxeram perspectivas pedagógicas e técnicas. Essa colaboração orienta uma experiência de aprendizagem mais próxima da realidade dos jovens.</p>
         <div class="dim">
           <div class="sx">
@@ -373,7 +393,7 @@
     <section class="team" id="equipe">
       <div class="wrap">
         <div class="rv">
-          <h2>Uma parceria entre <mark>Nutrição, Saúde</mark> e Informática.</h2>
+          <h2>Uma parceria entre <span class="mk">Nutrição, Saúde</span> e Informática.</h2>
           <p class="t">O NutriTeens é desenvolvido na Universidade Federal de Viçosa, em colaboração entre dois
             departamentos, como projeto de Iniciação Científica (PIBIC/CNPq).</p>
           <div class="inst">
@@ -389,7 +409,7 @@
           <p class="small">Pesquisa aprovada pelo Comitê de Ética em Pesquisa da UFV (CAAE 94172425.4.0000.5153).
             Agradecemos às escolas, professores, nutricionista e adolescentes que participaram das sessões.</p>
         </div>
-        <ul class="ppl" aria-label="Equipe">
+        <ul class="ppl" role="list" aria-label="Equipe">
           <li class="sx"><span class="av" aria-hidden="true">AE</span>
             <div><b>Ana Elisa Silva Pinto</b><span>Colaboração em Nutrição · Departamento de Nutrição e Saúde</span>
             </div>
@@ -412,9 +432,9 @@
     <section class="end" id="projeto">
       <div class="wrap rv">
         <img src="assets/broxis-aceno.webp" alt="Broxis acenando" width="126" height="200" loading="lazy">
-        <h2>Sua próxima descoberta <mark class="a">começa aqui.</mark></h2>
+        <h2>Sua próxima descoberta <span class="mk a">começa aqui.</span></h2>
         <p>Explore o protótipo do NutriTeens, conheça as missões, as trilhas de aprendizagem e as cartas do Álbum do Guia. Veja como estamos transformando orientações sobre alimentação saudável em uma experiência interativa para adolescentes.</p>
-        <div class="cta"><a class="btn btn-d" href="https://www.figma.com/design/Ckl9eni0Mxqnb0QPM0pmhx/IIRE_2026?node-id=0-1&t=lJZu1jk4vyoPmUJK-1" target="_blank" rel="noopener">Explorar o protótipo <span aria-hidden="true">↗</span></a>
+        <div class="cta"><a class="btn btn-d" href="https://www.figma.com/design/Ckl9eni0Mxqnb0QPM0pmhx/IIRE_2026?node-id=0-1&t=lJZu1jk4vyoPmUJK-1" target="_blank" rel="noopener">Explorar o protótipo <span aria-hidden="true">↗</span><span class="sr"> (abre em nova aba)</span></a>
           <a class="btn btn-w" href="#instalar">Instalar a versão de testes</a></div>
       </div>
     </section>
@@ -426,16 +446,16 @@
         <p>Aplicativo educativo de apoio à alimentação saudável para adolescentes, inspirado no Guia Alimentar para a
           População Brasileira. Não substitui o acompanhamento de profissionais de saúde.</p>
       </div>
-      <ul aria-label="Links institucionais">
+      <ul role="list" aria-label="Links institucionais">
         <li><a href="ios.html">Instalar no iPhone</a></li>
         <li><a href="android.html">Instalar no Android</a></li>
         <li><a href="#recursos">Recursos</a></li>
         <li><a href="#duvidas">Dúvidas frequentes</a></li>
         <li><a href="#equipe">Equipe</a></li>
         <li><a href="https://www.figma.com/design/Ckl9eni0Mxqnb0QPM0pmhx/IIRE_2026?node-id=0-1&t=lJZu1jk4vyoPmUJK-1"
-            target="_blank" rel="noopener">Protótipo no Figma</a></li>
+            target="_blank" rel="noopener">Protótipo no Figma<span class="sr"> (abre em nova aba)</span></a></li>
         <li><a href="https://bvsms.saude.gov.br/bvs/publicacoes/guia_alimentar_populacao_brasileira_2ed.pdf"
-            target="_blank" rel="noopener">Guia Alimentar (Ministério da Saúde)</a></li>
+            target="_blank" rel="noopener">Guia Alimentar (Ministério da Saúde)<span class="sr"> (abre em nova aba)</span></a></li>
       </ul>
       <small>© 2026 NutriTeens · Projeto de Iniciação Científica (PIBIC/CNPq), UFV · Licença MIT</small>
     </div>
@@ -445,6 +465,60 @@
     const cnt = new Map();
     document.querySelectorAll('.rv,.sx').forEach(el => { if (el.classList.contains('sx')) { const n = cnt.get(el.parentElement) || 0; cnt.set(el.parentElement, n + 1); el.style.setProperty('--d', (n % 4) * .14 + 's') } io.observe(el) });
   </script>
+  <script>
+    (() => {
+      const Q = [
+        { t: "Feijão, frutas e ovos são exemplos de comida de verdade.", a: true, why: "São, sim. Alimentos naturais ou pouco processados devem ser a base do dia a dia, segundo o Guia Alimentar.", img: "carta-01", alt: "Carta 01: Comida de verdade" },
+        { t: "Pular refeições é um bom jeito de cuidar da alimentação.", a: false, why: "Na verdade, não. Comer em horários regulares ajuda o corpo e a atenção, e evita chegar com muita pressa à próxima refeição.", img: "carta-05", alt: "Carta 05: Com calma e companhia" },
+        { t: "Cozinhar, mesmo receitas simples, ajuda a comer melhor.", a: true, why: "Ajuda, sim. Cozinhar dá liberdade para escolher ingredientes e descobrir sabores, e o Guia incentiva essa habilidade.", img: "carta-07", alt: "Carta 07: Mão na massa" }
+      ];
+      const g = document.getElementById("game"), main = document.getElementById("gmain"), xpEl = document.getElementById("xp"), stepEl = document.getElementById("step");
+      const slots = document.querySelectorAll(".slot");
+      let i = 0, xp = 0;
+      const mascot = n => `<img class="g-mascot" src="assets/${n}.webp" alt="" width="170" height="165">`;
+      function ask() {
+        const q = Q[i];
+        stepEl.textContent = `Pergunta ${i + 1} de ${Q.length}`;
+        main.innerHTML = `<div class="g-body">${mascot("rx-curioso")}<p class="g-q" tabindex="-1">${q.t}</p></div>
+          <div class="g-opts"><button class="q-btn t" data-v="1">Verdadeiro</button><button class="q-btn f" data-v="0">Falso</button></div>
+          <div class="g-fb" role="status" aria-live="polite"></div>`;
+      }
+      function answer(btn) {
+        const q = Q[i], ok = (btn.dataset.v === "1") === q.a;
+        xp += 10; xpEl.textContent = xp;
+        main.querySelectorAll(".q-btn").forEach(b => { b.disabled = true });
+        btn.insertAdjacentHTML("beforeend", '<span class="sr"> (sua resposta)</span>');
+        btn.classList.add("sel");
+        main.querySelector(".g-mascot").src = `assets/${ok ? "rx-supercontente" : "rx-curioso"}.webp`;
+        const last = i === Q.length - 1;
+        main.querySelector(".g-fb").innerHTML = `<p class="g-t">${ok ? "Isso mesmo!" : "Quase!"}</p><p>${q.why}</p>
+          <div class="g-card"><img src="assets/${q.img}.webp" alt="" width="360" height="530"><span>Você abriu a <b>${q.alt}</b>. +10 XP</span></div>
+          <button class="btn btn-d" data-next>${last ? "Ver resultado" : "Próxima pergunta"}</button>`;
+        slots[i].classList.add("on");
+        slots[i].innerHTML = `<img src="assets/${q.img}.webp" alt="${q.alt}" width="360" height="530">`;
+      }
+      function end() {
+        stepEl.textContent = "Missão cumprida";
+        main.innerHTML = `<div class="g-end"><div class="g-body">${mascot("rx-orgulhoso")}<h3 tabindex="-1">Missão cumprida!</h3></div>
+          <p>Você abriu ${Q.length} cartas do Álbum do Guia e ganhou ${xp} XP. No app, são 10 cartas, uma para cada passo do Guia.</p>
+          <div class="cta"><a class="btn btn-d" href="#instalar">Instalar a versão de testes</a><button class="btn btn-w" data-again>Jogar de novo</button></div></div>`;
+        main.querySelector("h3").focus({ preventScroll: true });
+      }
+      function reset() {
+        i = 0; xp = 0; xpEl.textContent = 0;
+        slots.forEach(s => { s.className = "slot"; s.innerHTML = '<span aria-hidden="true">?</span><span class="sr">Carta bloqueada</span>' });
+        ask();
+      }
+      g.addEventListener("click", e => {
+        const b = e.target.closest("button"); if (!b) return;
+        if (b.dataset.v) answer(b);
+        else if (b.hasAttribute("data-next")) { if (++i < Q.length) { ask(); main.querySelector(".g-q").focus({ preventScroll: true }) } else end() }
+        else if (b.hasAttribute("data-again")) { reset(); main.querySelector(".g-q").focus({ preventScroll: true }) }
+      });
+      ask();
+    })();
+  </script>
+<script src="js/a11y.js" defer></script>
 </body>
 
 </html>
